@@ -1,2 +1,3 @@
 # Keyboard-js
-Making a keyboard !
+Javascript piano keyboard with event listeners attached to computer keyboard, use keys [asdfghjkl]
+ 
