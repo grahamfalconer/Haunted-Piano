@@ -1,40 +1,58 @@
+</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GrahmPiano</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <div class="piano-holder">
-    <div class="white key">
+  <h1> Grahams Haunted Piano </h1>
+  <div class="piano-holder"> 
+    <div class="white key" id="key-a-3"> A3
+      <audio src="piano-keys/203458__tesabob2001__a3.mp3" id="A3"> </audio>
+    </div>
+    <div class="white key" id="key-b-3" >B3
+      <audio src="piano-keys/203463__tesabob2001__b3.mp3" id="B3"> </audio>
+    </div>
+    <div class="white key" id="key-c-3"> C3
       <audio src="piano-keys/203479__tesabob2001__c3.mp3" id="C3"></audio>
     </div>
-    <div class="white key">
+    <div class="white key" id="key-d-3">D3
       <audio src="piano-keys/203486__tesabob2001__d3.mp3" id="D3"></audio>
     </div>
-    <div class="white key">
+    <div class="white key" id="key-e-3">E3
       <audio src="piano-keys/203470__tesabob2001__e3.mp3" id="E3"></audio>
     </div>
-    <div class="white key">
+    <div class="white key" id="key-f-3">F3
       <audio src="piano-keys/203468__tesabob2001__f3.mp3" id="F3"></audio>
     </div>
-    <div class="white key">
+    <div class="white key" id="key-g-3">G3
       <audio src="piano-keys/203493__tesabob2001__g3.mp3" id="G3"></audio>
     </div>
-
-
-  </div>
-  
+    <div class="white key" id="key-c-4">C4
+      <audio src="piano-keys/203478__tesabob2001__c4-middle-c.mp3" id="C4"></audio>
+    </div>
+    <div class="white key" id="key-d-4">D4
+      <audio src="piano-keys/203472__tesabob2001__d4.mp3" id="D4"></audio>
+    </div>
+    <div class="white key" id="key-e-4">E4
+      <audio src="piano-keys/203471__tesabob2001__e4.mp3" id="E4"></audio>
+    </div>
+    <div class="white key" id="key-f-4">F4
+      <audio src="piano-keys/203500__tesabob2001__f-4.mp3" id="F4"></audio>
+    </div>
+    <div class="white key" id="key-g-4">G4
+      <audio src="piano-keys/203492__tesabob2001__g4.mp3" id="G4"></audio>
+    </div>
+<div>
+  <h1> Greatest Hits: </h1>
+  <a onclick="maryHadALittleLamb()"> "Mary Had A little Lamb" </a>
+  <a onclick="chopSticks()"> "Kungfu fighting" </a>
+  <a onclick="playString(twinkleTwinkle, 100)"> "Twinkle twinkle" </a>
+  <a onclick="playString(standByMe, 50)"> "Stand by me" </a>
+</div>
 </body>
 </html>
-<script>
-  playC = function(){
-    c3 = document.getElementById('C3')
-    c3.play();
-  }
-  playD = function(){
-    c3 = document.getElementById('D3')
-    c3.play();
-  }
-</script>
+<script src="index.js"></script>

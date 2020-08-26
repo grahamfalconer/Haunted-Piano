@@ -1,0 +1,49 @@
+body{
+  background-color: black;
+  text-align: center;
+}
+div{
+  font-size: 3vw;
+  font-family: scary;
+}
+.piano-holder{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+}
+.key{
+  padding: 1vw;
+  display: inline-block;
+
+}
+.white{
+  width: 3.5vw;
+  height: 14vw;
+  background-color: white;
+}
+h1{
+  font-size: 5vw;
+  font-family: scary2;
+  color: white;
+
+}
+a{
+  margin: 0.8vw;
+  font-size: 3vw;
+  color: white;
+  font-family: scary;
+}
+a:hover{
+  color: coral;
+  cursor: pointer;
+}
+@font-face{
+  src: url(fonts/What\ is\ this\ -\ some\ kind\ of\ joke.ttf);
+  font-family: 'scary';
+}
+@font-face{
+  src: url(fonts/TheyPerished.ttf);
+  font-family: 'scary2';
+}
