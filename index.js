@@ -11,59 +11,71 @@ findComponents = function(){
   e3 = {appearance: document.getElementById('key-e-3'), sound: document.getElementById('E3')}
   f3 = {appearance: document.getElementById('key-f-3'), sound: document.getElementById('F3')}
   g3 = {appearance: document.getElementById('key-g-3'), sound: document.getElementById('G3')}
+  b4 = {appearance: document.getElementById('key-b-4'), sound: document.getElementById('B4')}
   c4 = {appearance: document.getElementById('key-c-4'), sound: document.getElementById('C4')}
   d4 = {appearance: document.getElementById('key-d-4'), sound: document.getElementById('D4')}
   e4 = {appearance: document.getElementById('key-e-4'), sound: document.getElementById('E4')}
   f4 = {appearance: document.getElementById('key-f-4'), sound: document.getElementById('F4')}
   g4 = {appearance: document.getElementById('key-g-4'), sound: document.getElementById('G4')}
-
 }
 attachEventListeners = function(){
   document.addEventListener("keydown", function(event){
     key = event.key;
     if(key == 'a'){
-      keyPressed(c3)
+      keyPressed(a3)
     } else if(key == 's'){
-      keyPressed(d3)
+      keyPressed(b3)
     }else if(key == 'd'){
-      keyPressed(e3)
+      keyPressed(c3)
     }else if(key == 'f'){
-      keyPressed(f3)
+      keyPressed(d3)
     }else if(key == 'g'){
-      keyPressed(g3)
+      keyPressed(e3)
     }else if(key == 'h'){
-      keyPressed(c4)
+      keyPressed(f3)
     }else if(key == 'j'){
-      keyPressed(d4)
+      keyPressed(g3)
     }else if(key == 'k'){
-      keyPressed(e4)
+      keyPressed(b4)
     }else if(key == 'l'){
-      keyPressed(f4)
+      keyPressed(c4)
     }else if(key == ';'){
+      keyPressed(d4)
+    }else if(event.code == 'Quote'){
+      keyPressed(e4)
+    }else if(event.code == 'Backslash'){
+      keyPressed(f4)
+    }else if(key == 'Enter'){
       keyPressed(g4)
     }
   })
   document.addEventListener("keyup", function(event){
     key = event.key;
     if(key == 'a'){
-      keyReleased(c3)
+      keyReleased(a3)
     } else if(key == 's'){
-      keyReleased(d3)
+      keyReleased(b3)
     }else if(key == 'd'){
-      keyReleased(e3)
+      keyReleased(c3)
     }else if(key == 'f'){
-      keyReleased(f3)
+      keyReleased(d3)
     }else if(key == 'g'){
-      keyReleased(g3)
+      keyReleased(e3)
     }else if(key == 'h'){
-      keyReleased(c4)
+      keyReleased(f3)
     }else if(key == 'j'){
-      keyReleased(d4)
+      keyReleased(g3)
     }else if(key == 'k'){
-      keyReleased(e4)
+      keyReleased(b4)
     }else if(key == 'l'){
-      keyReleased(f4)
+      keyReleased(c4)
     }else if(key == ';'){
+      keyReleased(d4)
+    }else if(event.code == 'Quote'){
+      keyReleased(e4)
+    }else if(event.code == 'Backslash'){
+      keyReleased(f4)
+    }else if(key == 'Enter'){
       keyReleased(g4)
     }
   })
@@ -203,5 +215,12 @@ playString = function(string, speed){
       schedule.push(scheduledEvent)
       setTimeout(function(){playNote(window[note.instruction])} , timeToWait )
     }
+  })
+}
+discoMode = function(){
+  allKeys = [a3, b3, c3, e3, f3, g3, c4, d4, e4, f4, g4]
+  allKeys.forEach(function(key){
+    console.log(key.appearance)
+    key.appearance.setAttribute('style', 'animation-name: flashColors; animation-duration: 4s; animation-iteration-count: infinite;')
   })
 }
