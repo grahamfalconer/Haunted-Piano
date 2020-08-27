@@ -3,9 +3,9 @@ Javascript piano keyboard with event listeners attached to computer keyboard, us
 
 The project is hosted <a href="http://grahamshauntedpiano.surge.sh/"> here. </a> 
 
->If you wish to run the project locally then please 
+If you wish to run the project locally then please 
 
->> clone the link
->>> cd into the project
->>>> right click on index.html and select 'run on live server'
+>  - clone the link
+>> -  cd into the project
+>>> -  right click on index.html and select 'run on live server'
  
