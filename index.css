@@ -15,6 +15,13 @@ div{
   text-align: center;
   justify-content: center;
 }
+.disco{
+  color: white;
+  position: absolute;
+  z-index: 5;
+  top: 20vw;
+  right: 0vw;
+}
 .key{
   padding: 1vw;
   display: inline-block;

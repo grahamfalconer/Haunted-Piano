@@ -17,6 +17,7 @@ findComponents = function(){
   e4 = {appearance: document.getElementById('key-e-4'), sound: document.getElementById('E4')}
   f4 = {appearance: document.getElementById('key-f-4'), sound: document.getElementById('F4')}
   g4 = {appearance: document.getElementById('key-g-4'), sound: document.getElementById('G4')}
+  discoButton = document.getElementsByClassName('disco')[0]
 }
 attachEventListeners = function(){
   document.addEventListener("keydown", function(event){
@@ -212,11 +213,32 @@ playString = function(string, speed){
     }
   })
 }
-discoMode = function(){
+inDiscoMode = false;
+enterDiscoMode = function(){
   allKeys = [a3, b3, c3, e3, f3, g3, c4, d4, e4, f4, g4]
+  falseBody = document.getElementsByClassName('false-body')[0]
   allKeys.forEach(function(key){
     key.appearance.setAttribute('style', 'animation-name: flashColors; animation-duration: 4s; animation-iteration-count: infinite;')
   })
+  discoButton.innerHTML = 'Disco Mode: on'
+  inDiscoMode = true;
 }
+exitDiscoMode = function(){
+  allKeys = [a3, b3, c3, e3, f3, g3, c4, d4, e4, f4, g4]
+  
+  allKeys.forEach(function(key){
+    key.appearance.setAttribute('style', 'animation-name: none;')
+  })
+  discoButton.innerHTML = 'Disco Mode: off'
+  inDiscoMode = false;
+}
+toggleDiscoMode = function(){
+  if(inDiscoMode){
+    exitDiscoMode();
+  }else{
+    enterDiscoMode();
+  }
+}
+
 
 window.onload = initializePiano();
