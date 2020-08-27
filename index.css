@@ -16,8 +16,8 @@ div{
 .key{
   padding: 1vw;
   display: inline-block;
-
 }
+
 .white{
   width: 3.5vw;
   height: 14vw;
@@ -26,7 +26,7 @@ div{
 h1{
   font-size: 5vw;
   font-family: scary2;
-  color: white;
+  color: rgb(171, 235, 198);
 
 }
 a{
@@ -38,6 +38,10 @@ a{
 a:hover{
   color: coral;
   cursor: pointer;
+}
+span{
+  font-family: scary1;
+  font-size: 1vw;
 }
 @font-face{
   src: url(fonts/What\ is\ this\ -\ some\ kind\ of\ joke.ttf);
