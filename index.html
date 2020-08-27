@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="practice.css">
 </head>
 <body>
+<div class="false-body">
   <h1> Grahams Haunted Piano </h1>
   <div class="piano-holder"> 
     <div class="white key" id="key-a-3"> A3
@@ -86,11 +87,14 @@
     <div class="black key" id="key-g-4">
       <audio src="piano-keys/203491__tesabob2001__g-4.mp3" id="G4"></audio>
     </div>
-  <h1> Greatest Hits: </h1>
-  <a onclick="maryHadALittleLamb()"> "Mary Had A little Lamb" </a>
-  <a onclick="chopSticks()"> "Kungfu fighting" </a>
-  <a onclick="playString(twinkleTwinkle, 100)"> "Twinkle twinkle" </a>
-  <a onclick="playString(standByMe, 50)"> "Stand by me" </a>
+    <div>
+      <h1 id="greatest-hits"> Greatest Hits: </h1>
+      <a onclick="maryHadALittleLamb()"> "Mary Had A little Lamb" </a>
+      <a onclick="chopSticks()"> "Kungfu fighting" </a>
+      <a onclick="playString(twinkleTwinkle, 100)"> "Twinkle twinkle" </a>
+      <a onclick="playString(standByMe, 50)"> "Stand by me" </a>
+    </div>
+  </div>
 </div>
 </body>
 </html>

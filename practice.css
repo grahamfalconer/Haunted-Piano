@@ -1,22 +1,21 @@
 
 .black{
-  /* padding-left: 1vw; */
-  /* margin-left: 5; */
-  margin: 1.4%;
+  margin: 1.38vw;
   width: 0.75vw;
   height: 10.39vw;
   color: white;
   font-size: 60%;
   background-color: rgba(0, 0, 0, 1);
+
 }
 .missing-key{
   opacity: 0;
+  pointer-events: none;
 }
 .black-keys-holder{
-  width: 100%;
   background-color: transparent;
   position: absolute;
   top: 7.25vw;
-  left: 3.25vw;
+  left: 6vw;
 
 }

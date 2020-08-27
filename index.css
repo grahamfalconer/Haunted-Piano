@@ -7,8 +7,10 @@ div{
   font-family: scary;
 }
 .piano-holder{
+  border-top: coral 0.4vw solid;
+  border-bottom: coral 0.4vw solid;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   background-color: black;
   text-align: center;
   justify-content: center;
@@ -17,11 +19,19 @@ div{
   padding: 1vw;
   display: inline-block;
 }
+.key:hover{
+  cursor: pointer;
+  color: coral;
+}
 
 .white{
   width: 3.5vw;
   height: 14vw;
   background-color: white;
+}
+.white:hover{
+  cursor: pointer;
+  color: coral;
 }
 h1{
   font-size: 5vw;
@@ -43,6 +53,11 @@ span{
   font-family: scary1;
   font-size: 1vw;
 }
+#greatest-hits{
+  padding-right: 20%;
+  margin-top: 0;
+  font-size: 4vw;
+}
 @font-face{
   src: url(fonts/What\ is\ this\ -\ some\ kind\ of\ joke.ttf);
   font-family: 'scary';
@@ -51,3 +66,29 @@ span{
   src: url(fonts/TheyPerished.ttf);
   font-family: 'scary2';
 }
+@keyframes hauntedEffect{
+  0% {padding: 0%;}
+  15%{ padding: 5%}
+  30% {padding: 7%}
+  45% {padding: 1.1%}
+  50% {padding: 0%}
+  55% {padding: 0.5%}
+}
+
+@keyframes flashColors {
+  0%   {color: white; opacity: 1;}
+  45%  {color: white;}
+  55%  {color: chocolate}
+  55% {color: rgb(51, 255, 153);}
+  60% {color: rgb(255, 102, 255)}
+  67.5% {color: rgba(255, 102, 255, 0.5) }
+  70% {color: rgba(255, 102, 255, 0.9);}
+  75% {color: chocolate;}
+  80% {color: black;}
+  82.5% {color: white;}
+  85% {color: black;}
+  87.5% {color: white;}
+  95% {color: black;}
+  100% {color: white;}
+}
+
