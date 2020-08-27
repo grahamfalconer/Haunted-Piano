@@ -3,9 +3,8 @@
   margin: 1.45%;
   width: 0.75vw;
   height: 10.39vw;
-  color: white;
   font-size: 60%;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: black;
 
 }
 .missing-key{
@@ -15,7 +14,7 @@
 .black-keys-holder{
   background-color: transparent;
   position: absolute;
-  top: 7.25vw;
+  top: 8.3vw;
   left: 5.75vw;
 
 }

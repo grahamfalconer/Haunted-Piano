@@ -83,9 +83,7 @@ attachEventListeners = function(){
 //helper functions
 keyPressed = function(key){
   key.sound.play()
-  // console.log(key)
   key.appearance.setAttribute('style', 'background-color: grey;')
-  console.log(key)
 }
 keyReleased = function(key){
   key.sound.currentTime = 0;
@@ -97,7 +95,6 @@ playNote = function(key){
   keyPressed(key)
   setTimeout(function(){keyReleased(key)}, 200)
 }
-
 // AI songs
 maryHadALittleLamb = function(){
   setTimeout(function(){playNote(e3)}, 200)
@@ -180,12 +177,10 @@ chopSticks = function(){
   //duhhhh
 }
 
-
-window.onload = initializePiano();
-
 schedule= []//when the    night        has   come              and     the    land   is    dark     and          the           moon is  the only     light   we'll  see        oh    I    wont        be     a   fraaaaid        NO
 standByMe = 'E      G      A            E      G                C      D      E    D    C            C         D   E           C      E  D   C         D     D     C            E      G      A         E     G    A            G      E   D        D   E        D        D   C          C         E         D   C        C         E       D   C        E           D     C'
 twinkleTwinkle = 'C   C      G   G     A   A   G    F   F     E   E      D   D    C   G      G   F   F   E   E    D   G      G      F   F     E    E    D      C   C      G   G     A   A   G   F     F     E   E     D     D     C'
+// string songs
 
 playString = function(string, speed){
   schedule= []
@@ -220,7 +215,8 @@ playString = function(string, speed){
 discoMode = function(){
   allKeys = [a3, b3, c3, e3, f3, g3, c4, d4, e4, f4, g4]
   allKeys.forEach(function(key){
-    console.log(key.appearance)
     key.appearance.setAttribute('style', 'animation-name: flashColors; animation-duration: 4s; animation-iteration-count: infinite;')
   })
 }
+
+window.onload = initializePiano();
