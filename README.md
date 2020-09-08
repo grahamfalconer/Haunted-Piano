@@ -13,6 +13,10 @@ cd into the project
 ```
 
 ```
-right click on index.html and select 'run on live server'
+right click on index.html
+```
+
+```
+select to open the file in a browser of your choosing and enjoy !
 ```
  
