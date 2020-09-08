@@ -30,7 +30,6 @@ findComponents = function(){
   d4sharp = {appearance:document.getElementById('key-d-4sharp'), sound: document.getElementById('D4sharp')}
   f4sharp = {appearance:document.getElementById('key-f-4sharp'), sound: document.getElementById('F4sharp')}
   g4sharp = {appearance:document.getElementById('key-g-4sharp'), sound: document.getElementById('G4sharp')}
-
   discoButton = document.getElementsByClassName('disco')[0]
 }
 attachEventListeners = function(){
@@ -276,16 +275,15 @@ playString = function(string, speed){
 }
 inDiscoMode = false;
 enterDiscoMode = function(){
-  allKeys = [a3, b3, c3, e3, f3, g3, c4, d4, e4, f4, g4]
-  falseBody = document.getElementsByClassName('false-body')[0]
+  allKeys = [a3, b3, c3, d3, e3, f3, g3, b4, c4, d4, e4, f4, g4, a3sharp, b3sharp, c3sharp, d3sharp, f3sharp, g3sharp, c4sharp, d4sharp, f4sharp, g4sharp]
   allKeys.forEach(function(key){
-    key.appearance.setAttribute('style', 'animation-name: flashColors; animation-duration: 4s; animation-iteration-count: infinite;')
+    key.appearance.className == 'white key' ?  key.appearance.setAttribute('style', 'animation-name: flashColors; animation-duration: 4s; animation-iteration-count: infinite;') : key.appearance.setAttribute('style', 'animation-name: hauntedEffect; animation-duration: 4s; animation-iteration-count: infinite;')
   })
   discoButton.innerHTML = 'Disco Mode: on'
   inDiscoMode = true;
 }
 exitDiscoMode = function(){
-  allKeys = [a3, b3, c3, e3, f3, g3, c4, d4, e4, f4, g4]
+  allKeys = [a3, b3, c3, d3, e3, f3, g3, b4, c4, d4, e4, f4, g4, a3sharp, b3sharp, c3sharp, d3sharp, f3sharp, g3sharp, c4sharp, d4sharp, f4sharp, g4sharp]
   
   allKeys.forEach(function(key){
     key.appearance.setAttribute('style', 'animation-name: none;')
